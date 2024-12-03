@@ -1,0 +1,31 @@
+{
+  "application": {
+    "name": "Impetus AI",
+    "version": "1.0.0",
+    "debug_mode": true
+  },
+  "network": {
+    "default_host": "127.0.0.1",
+    "default_port": 65432,
+    "connection_timeout": 30,
+    "max_connections": 100
+  },
+  "logging": {
+    "log_file": "logs/app.log",
+    "log_level": "INFO"
+  },
+  "api": {
+    "base_url": "https://api.impetus.ai",
+    "retry_attempts": 3,
+    "retry_delay": 5
+  },
+  "security": {
+    "enable_ssl": true,
+    "ssl_certificate_path": "certs/server.crt",
+    "ssl_key_path": "certs/server.key"
+  },
+  "performance": {
+    "monitor_interval": 10,
+    "max_data_buffer": 4096
+  }
+}
